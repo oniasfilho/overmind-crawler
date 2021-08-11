@@ -11,7 +11,7 @@
     <groupId>io.oniasfilho</groupId>
     <artifactId>overmind-crawler-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>overmind-crawler-api</name>
+    <name>overmind-io.oniasfilho.overmindcrawlerapi.crawler-api</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
@@ -20,6 +20,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -42,17 +48,8 @@
             <artifactId>crawler4j</artifactId>
             <version>4.4.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>7.14.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-mllib_2.10</artifactId>
-            <version>1.4.0</version>
-        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -68,6 +65,7 @@
                     </excludes>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
