@@ -2,7 +2,7 @@
 
 ## Teste: Webcrawler
 
-A prova consiste em construir um io.oniasfilho.overmindcrawlerapi.crawler em Java, utilizando qualquer tecnologia nativa ou biblioteca aberta, que visite
+A prova consiste em construir um crawler em Java, utilizando qualquer tecnologia nativa ou biblioteca aberta, que visite
 o site do [IMDB]( https://www.imdb.com) (The Internet Movie Database) e procure
 pelos [piores filmes da história]( https://www.imdb.com/chart/bottom). O resultado da execução do io.oniasfilho.overmindcrawlerapi.crawler deve ser:
 
