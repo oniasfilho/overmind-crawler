@@ -27,7 +27,7 @@ Mãos à obra!
 
 #### Informacoes para acesso da aplicacao em nuvem:
 
-- URL: <inserir url do deploy da heroku>
+- URL: https://overmind-crawler.herokuapp.com/api/IMDB
 
 
 Tecnologias/Bibliotecas Utilizadas:
@@ -46,12 +46,6 @@ Tecnologias/Bibliotecas Utilizadas:
 - [x] 5) Elenco principal
 - [x] 6) Ao menos um comentário POSITIVO sobre o filme (comentário que deu uma nota >= 5)
 
-<!--
-### Extras
-
- * A aplicação rodando em algum ambiente em nuvem:
- Foi feito deploy da aplicacao completa (database, api e front end) na Amazon Web Services, sendo que o entrypoint da mesma se encontra no seguinte endereco: https://frontend.oniasfilho.io/ -->
-  
 
 ### Instalacao
 
@@ -72,12 +66,4 @@ Na pasta principal do projeto, executar:
 $ mvn clean package install & mvn clean spring-boot:run
 ```
 Após a execução, a API estará disponível em http://localhost/8080 onde haverá dois endpoinds, um de [teste](http://localhost/8080/ping) e o [principal](http://localhost:8080/api/IMDB).
-<!-- 
-Setup do Front End:
-Na pasta frontEnd, executar:
 
-```sh
-$ npm start
-```
-
-Para consumir a aplicacao: http://localhost:3000 -->
