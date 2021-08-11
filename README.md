@@ -1,3 +1,5 @@
+# 1) Aplicação Proposta: 
+
 ## Teste: Webcrawler
 
 A prova consiste em construir um io.oniasfilho.overmindcrawlerapi.crawler em Java, utilizando qualquer tecnologia nativa ou biblioteca aberta, que visite
@@ -18,3 +20,59 @@ facilidade de entendimento.
 Nossa sugestão é a entrega da resolução até 12/08, para este mesmo e-mail.
 
 Mãos à obra!
+
+
+# 2) Solução Desenvolvida: 
+
+
+#### Informacoes para acesso da aplicacao em nuvem:
+
+- URL: <inserir url do deploy da heroku>
+
+
+Tecnologias/Bibliotecas Utilizadas:
+
+  - Spring Framework
+  - Jsoup
+
+
+### Checklist de Requisitos
+
+- [x] 1) A Lista dos 10 filmes com pior nota no site. A lista pode ser exibida onde preferir (console, arquivo externo, página
+  web), em ordem decrescente de melhor para pior nota
+- [x] 2) Nome do Filme (deve estar em inglês)
+- [x] 3) Nota (com uma casa decimal)
+- [x] 4) Diretor(es)
+- [x] 5) Elenco principal
+- [x] 6) Ao menos um comentário POSITIVO sobre o filme (comentário que deu uma nota >= 5)
+
+<!--
+### Extras
+
+ * A aplicação rodando em algum ambiente em nuvem:
+ Foi feito deploy da aplicacao completa (database, api e front end) na Amazon Web Services, sendo que o entrypoint da mesma se encontra no seguinte endereco: https://frontend.oniasfilho.io/ -->
+  
+
+### Instalacao
+
+Esse projeto precisa de [Maven](https://maven.apache.org/download.cgi) e [Java](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) instalados em sua máquina para funcionar.
+  
+Caso não seja possível instalar as ferramentas previamente informadas, [um deploy foi feito no heroku](#) onde é possível obter a resposta do web scrapper pelo próprio navegador. [Json Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR) é recomendado para visualizar via navegador porém não é necessário.
+
+
+Setup da API:
+Na pasta principal do projeto, executar:
+
+```sh
+$ mvn clean package install & mvn clean spring-boot:run
+```
+Após a execução, a API estará disponível em http://localhost/8080 onde haverá dois endpoinds, um de [teste](http://localhost/8080/ping) e o [principal](http://localhost:8080/api/IMDB).
+<!-- 
+Setup do Front End:
+Na pasta frontEnd, executar:
+
+```sh
+$ npm start
+```
+
+Para consumir a aplicacao: http://localhost:3000 -->
