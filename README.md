@@ -51,7 +51,7 @@ Tecnologias/Bibliotecas Utilizadas:
 
 Esse projeto precisa de [Maven](https://maven.apache.org/download.cgi) e [Java](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) instalados em sua máquina para funcionar.
   
-Caso não seja possível instalar as ferramentas previamente informadas, [um deploy foi feito no heroku](https://overmind-crawler.herokuapp.com/api/IMDB) onde é possível obter a resposta do web scrapper pelo próprio navegador. [Json Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR) é recomendado para visualizar via navegador porém não é necessário.
+Caso não seja possível instalar as ferramentas previamente informadas, [um deploy foi feito no heroku](https://overmind-crawler.herokuapp.com/api/IMDB) onde é possível obter a resposta do web scraper pelo próprio navegador. [Json Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR) é recomendado para visualizar via navegador porém não é necessário.
   
 Por se tratar de um deploy feito gratuitamente, é possível que possa demorar alguns segundos para obter uma resposta. O resultado é obtido no seguinte formato:
   
